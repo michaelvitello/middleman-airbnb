@@ -1,22 +1,54 @@
-# data/flats.yml
 ssaunier:
   name: "Sebastien's home"
   description: "Charming room in Montmartre"
+  narrative: "This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur."
   city_name: "Paris, France"
   city_slug: "paris"
   wifi: false
+  kitchen: false
+  tv: true
+  welcome_drink: true
   rating: 4
+  accomodates: 1
+  bathroom: 1
+  bedroom: 1
+  beds: 1
+  bed_type: "Single"
+  property_type: "Apartment"
+  room_type: "Private Room"
 papillard:
   name: "Boris' home"
   description: Small flat in Tokyo
+  narrative: "This one bedroom apartment fits 2 people and is located in the city center, quiet area - 5 minutes walk from the metro."
   city_name: "Tokyo, Japan"
   city_slug: "tokyo"
   wifi: true
+  kitchen: true
+  tv: false
+  welcome_drink: true
   rating: 3
+  accomodates: 2
+  bathroom: 1
+  bedroom: 1
+  beds: 2
+  bed_type: "Double"
+  property_type: "Apartment"
+  room_type: "Entire Place"
 monsieurpaillard:
-  name: Romain's home
-  description: Nice flat in Piccadilly
+  name: "Romain's home"
+  description: "Nice flat in Piccadilly"
+  narrative: "This 2 bedroom massive and way overpriced penthouse welcomes up to 4 people (5 if you're friendly) and is located in the heart of Shoreditch, the busiest and nosiest area in London. It used to be cool, now it sucks... But hey, you gotta to see by yourself, I guess..."
   city_name: "London, UK"
   city_slug: "london"
   wifi: true
+  kitchen: true
+  tv: true
+  welcome_drink: true
   rating: 5
+  accomodates: 4
+  bathroom: 2
+  bedroom: 2
+  beds: 3
+  bed_type: "Double"
+  property_type: "Penthouse"
+  room_type: "Entire Place"

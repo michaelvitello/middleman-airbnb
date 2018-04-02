@@ -62,7 +62,7 @@
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
         <h2>About this flat</h2>
         <p>
-          This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.
+          <%= flat.narrative %>
         </p>
 
         <hr>
@@ -72,17 +72,17 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <ul class="list-unstyled">
-              <li>Accommodates:  <strong>2</strong></li>
-              <li>Bathrooms:  <strong>1</strong></li>
-              <li>Bed type:  <strong>Real Bed</strong></li>
-              <li>Bedrooms:  <strong>1</strong></li>
+              <li>Accommodates:  <strong><%= flat.accommodates %></strong></li>
+              <li>Bathrooms:  <strong><%= flat.bathroom %></strong></li>
+              <li>Bed type:  <strong><%= flat.bed_type %></strong></li>
+              <li>Bedrooms:  <strong><%= flat.bedroom %></strong></li>
             </ul>
           </div>
           <div class="col-xs-12 col-sm-4">
             <ul class="list-unstyled">
-              <li>Beds: <strong>1</strong></li>
-              <li>Property type: <strong>Apartment</strong></li>
-              <li>Room type: <strong>Entire home/apt</strong></li>
+              <li>Beds: <strong><%= flat.beds %></strong></li>
+              <li>Property type: <strong><%= flat.property_type %></strong></li>
+              <li>Room type: <strong><%= flat.room_type %></strong></li>
             </ul>
           </div>
         </div>
@@ -93,14 +93,20 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <ul class="list-unstyled">
-              <li><i class="fa fa-cutlery"></i><strong>Kitchen</strong></li>
-              <li><i class="fa fa-wifi"></i><strong>Wifi</strong></li>
+              <li><i class="fa fa-wifi"></i><strong><%= flat.wifi ? "Wifi" : "No Wifi" %></strong></li>
+              <% if flat.kitchen %>
+                <li><i class="fa fa-cutlery""></i><strong>Kitchen</strong></li>
+              <% end %>
             </ul>
           </div>
           <div class="col-xs-12 col-sm-4">
             <ul class="list-unstyled">
-              <li><i class="fa fa-desktop"></i><strong>TV</strong></li>
-              <li><i class="fa fa-glass"></i><strong>Welcome drink</strong></li>
+              <% if flat.tv %>
+                <li><i class="fa fa-desktop""></i><strong>TV</strong></li>
+              <% end %>
+              <% if flat.kitchen %>
+                <li><i class="fa fa-glass""></i><strong>Welcome drink</strong></li>
+              <% end %>
             </ul>
           </div>
         </div>
